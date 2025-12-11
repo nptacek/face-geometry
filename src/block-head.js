@@ -144,7 +144,7 @@ AFRAME.registerComponent('block-head', {
     let width = this.vectorBetweenPoints(LANDMARK_MOUTH_LEFT,
                                          LANDMARK_MOUTH_RIGHT,
                                          this.vectorA).length()
-    width - width / this.faceXLength
+    width = width / this.faceXLength
 
     // apply scale factors to mouth (but with adjustments)
     this.mouth.object3D.scale.y = height - 0.06
